@@ -1,13 +1,22 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Socket.IO chat</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css">
   </head>
   <body>
+    <nav class="nav">
+      <a href="#" class="logo">Chat<span class="style">Ónimo</span></a>
+    </nav>
+    <!-- <input type="text" id="userName">
+    <button id="login">Login</button> -->
     <ul id="messages"></ul>
     <form action="">
-      <input id="m" autocomplete="off" /><button>Send</button>
+      <input placeholder="Escribe algo aquí..." id="m" autocomplete="off" />
+      <button id="send">Send</button>
     </form>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>

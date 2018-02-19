@@ -4,7 +4,7 @@
 // var port = process.env.PORT || 3000;
 
 // Setup basic express server
-var express = require('express');
+/* var express = require('express');
 var app = express();
 var path = require('path');
 var server = require('http').createServer(app);
@@ -24,8 +24,8 @@ var numUsers = 0;
 
 io.on('connection', function (socket) {
   var addedUser = false;
-  
-  // For DEMO compatibility  
+
+  // For DEMO compatibility
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
   });
@@ -83,4 +83,4 @@ io.on('connection', function (socket) {
       });
     }
   });
-});
+}); */
